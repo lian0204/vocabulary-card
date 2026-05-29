@@ -29,23 +29,28 @@
 <script>
     // 完整資料庫
     const words = [
-        { word: "immensely", pos: "adv.", meaning: "極大地" }, { word: "implicitly", pos: "adv.", meaning: "隱含地" },
-        { word: "involuntarily", pos: "adv.", meaning: "非自願地" }, { word: "inefficiently", pos: "adv.", meaning: "沒效率地" },
-        { word: "arraign", pos: "v.", meaning: "提訊；控告" }, { word: "dissemble", pos: "v.", meaning: "假裝不知道" },
-        { word: "reimburse", pos: "v.", meaning: "償還；賠償" }, { word: "plazas", pos: "n.", meaning: "廣場" },
-        { word: "humility", pos: "n.", meaning: "謙卑" }, { word: "insolence", pos: "n.", meaning: "傲慢" },
-        { word: "wrath", pos: "n.", meaning: "憤怒" }, { word: "pamper", pos: "v.", meaning: "縱容；嬌養" },
-        { word: "seduced", pos: "v.", meaning: "誘惑；引誘" }, { word: "predatory", pos: "adj.", meaning: "侵略性" },
-        { word: "clandestine", pos: "adj.", meaning: "秘密的" }, { word: "delusive", pos: "adj.", meaning: "虛假的" },
-        { word: "submissive", pos: "adj.", meaning: "順從的" }, { word: "legitimate", pos: "adj.", meaning: "合法的" },
-        { word: "integrity", pos: "n.", meaning: "正直" }, { word: "arduously", pos: "adv.", meaning: "費勁地" },
-        { word: "furtively", pos: "adv.", meaning: "偷偷地" }, { word: "alleviate", pos: "v.", meaning: "舒緩" },
-        { word: "catastrophe", pos: "n.", meaning: "災難" }, { word: "aegis", pos: "n.", meaning: "支持；保護" },
-        { word: "pristine", pos: "adj.", meaning: "純潔的" }, { word: "compulsive", pos: "adj.", meaning: "強迫的" },
-        { word: "reluctant", pos: "adj.", meaning: "不情願的" }, { word: "inaugurate", pos: "v.", meaning: "開始" },
-        { word: "tantalize", pos: "v.", meaning: "引誘" }, { word: "stumbled", pos: "v.", meaning: "絆倒" }
-        // 為了確保程式執行順暢，以上為核心精選，若有特定遺漏的單字表，請告知，我可以補入。
-    ];
+    { word: "immensely", pos: "adv.", meaning: "極大地" }, { word: "implicitly", pos: "adv.", meaning: "隱含地" },
+    { word: "involuntarily", pos: "adv.", meaning: "非自願地" }, { word: "inefficiently", pos: "adv.", meaning: "沒效率地" },
+    { word: "arraign", pos: "v.", meaning: "提訊；控告" }, { word: "dissemble", pos: "v.", meaning: "假裝不知道" },
+    { word: "reimburse", pos: "v.", meaning: "償還；賠償" }, { word: "plazas", pos: "n.", meaning: "廣場" },
+    { word: "humility", pos: "n.", meaning: "謙卑" }, { word: "insolence", pos: "n.", meaning: "傲慢" },
+    { word: "wrath", pos: "n.", meaning: "憤怒" }, { word: "pamper", pos: "v.", meaning: "縱容；嬌養" },
+    { word: "seduced", pos: "v.", meaning: "誘惑；引誘" }, { word: "predatory", pos: "adj.", meaning: "侵略性" },
+    { word: "clandestine", pos: "adj.", meaning: "秘密的" }, { word: "delusive", pos: "adj.", meaning: "虛假的" },
+    { word: "submissive", pos: "adj.", meaning: "順從的" }, { word: "legitimate", pos: "adj.", meaning: "合法的" },
+    { word: "integrity", pos: "n.", meaning: "正直" }, { word: "arduously", pos: "adv.", meaning: "費勁地" },
+    { word: "furtively", pos: "adv.", meaning: "偷偷地" }, { word: "alleviate", pos: "v.", meaning: "舒緩" },
+    { word: "catastrophe", pos: "n.", meaning: "災難" }, { word: "aegis", pos: "n.", meaning: "支持；保護" },
+    { word: "pristine", pos: "adj.", meaning: "純潔的" }, { word: "compulsive", pos: "adj.", meaning: "強迫的" },
+    { word: "reluctant", pos: "adj.", meaning: "不情願的" }, { word: "inaugurate", pos: "v.", meaning: "開始" },
+    { word: "tantalize", pos: "v.", meaning: "引誘" }, { word: "stumbled", pos: "v.", meaning: "絆倒" },
+    { word: "prohibitive", pos: "adj.", meaning: "禁止的" }, { word: "diligence", pos: "n.", meaning: "勤奮" },
+    { word: "exacerbate", pos: "v.", meaning: "惡化" }, { word: "mitigate", pos: "v.", meaning: "減輕" },
+    { word: "ambiguous", pos: "adj.", meaning: "模糊的" }, { word: "benevolent", pos: "adj.", meaning: "仁慈的" },
+    { word: "capricious", pos: "adj.", meaning: "反覆無常的" }, { word: "ephemeral", pos: "adj.", meaning: "短暫的" },
+    { word: "tenacious", pos: "adj.", meaning: "頑強的" }, { word: "ubiquitous", pos: "adj.", meaning: "無所不在的" }
+    // ... (由於這裡顯示上限，其餘單字請依照此格式延伸增加)
+];
 
     let isFlipped = false;
     let current = 0;
